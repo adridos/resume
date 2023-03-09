@@ -1,5 +1,6 @@
+
 header {
-	background-color: #f1ac56; /* Set the background color of the header */
+	background-color: #F8CBA6; /* Set the background color of the header */
     display:flex;
     justify-content: space-between;
 }
@@ -14,6 +15,7 @@ nav {
 nav ul {
 	list-style: none; /* Remove the bullet points from the list */
 	display: flex; /* Use flexbox for the list */
+	font-size: 20px;
 }
 
 nav li {
@@ -28,7 +30,7 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #fff; /* Change the background color on hover */
+	background-color: #fde4cf; /* Change the background color on hover */
 	color: #333; /* Change the text color on hover */
 }
 
