@@ -25,9 +25,23 @@ img{
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
+    margin-bottom:30px;
 }
 
 .work-box:hover {
     transform: translateY(-5px);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#hatchImg{
+    width: 280px;
+}
+
+#internImg{
+    width: 320px;
+}
+
+
+#gameImg{
+    width: 300px;
 }
