@@ -65,4 +65,10 @@ main {
     margin: 20px 0;
     width: 100%;
   }
+
+  h3{
+	color: #f8c55d;
+    text-decoration: solid;
+    text-align: center;
+  }
   

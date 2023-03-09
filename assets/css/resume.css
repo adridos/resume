@@ -1,0 +1,11 @@
+#careerFocus{
+    border: 2px solid #f8c55d;
+    padding: 8px;
+    margin-top: 20px;
+}
+.resumeDivider {
+	border-top: 2px solid #f8c55d;
+    margin: 20px 0;
+    width: 40%;
+    margin:auto;
+  }
