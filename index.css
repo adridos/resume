@@ -1,14 +1,19 @@
+section{
+	width: 80%;
+}
 
+h2{
+	display: flex;
+    justify-content: center;
+}
 header {
-	background-color: #F8CBA6; /* Set the background color of the header */
+	background-color: #f8c55d;
+	; /* Set the background color of the header */
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 nav {
-	display: flex; /* Use flexbox for the navigation */
-	justify-content: space-between; /* Space out the navigation items */
-	align-items: center; /* Align the items vertically */
 	padding: 1rem; /* Add padding around the navigation */
 }
 
@@ -30,8 +35,8 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #fde4cf; /* Change the background color on hover */
-	color: #333; /* Change the text color on hover */
+	background-color: #f3d08a; /* Change the background color on hover */
+	color: black;/* Change the text color on hover */
 }
 
 main {
@@ -46,6 +51,7 @@ main {
 	overflow: hidden; /* Hide any overflowing content */
 	width: 200px;
 	height: 200px;
+	margin-top:15px;
 }
 
 .profile-image img {
@@ -54,3 +60,9 @@ main {
 	height: 100%;
 	object-fit: cover; /* Resize the image to cover the entire container */
 }
+.divider {
+	border-top: 2px solid #f8c55d;
+    margin: 20px 0;
+    width: 100%;
+  }
+  

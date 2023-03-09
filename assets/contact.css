@@ -27,3 +27,14 @@ a{
     transform: translateY(-5px);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
+
+.icon{
+    height: 50px;
+    width:auto;
+}
+
+.link{
+    border: 2px solid #f8c55d;
+    background-color: #f8c55d;
+    padding: 2px 5px;
+}
