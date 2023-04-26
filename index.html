@@ -33,33 +33,123 @@
             <div class="divider"></div>
 
             <div class="container">
-                <div class="work-box">
+                <div class="work-box" id="bakery">
                     <h3>Bakery Website</h3>
                     <img src="assets/images/bakery.png">
                 </div>
 
-                <div class="work-box">
+                <div class="work-box" id="grizzblocks">
                     <h3>GrizzBlocks</h3>
                     <img src="assets/images/grizzblocks.jpg">
                 </div>
 
-                <div class="work-box">
+                <div class="work-box" id="ford">
                     <h3>Summer 2022 Internship Project</h3>
                     <img src="assets/images/DA.jpg">
                 </div>
-                <div class="work-box">
+                <div class="work-box" id="hatch">
                     <h3>Fall 2022 Internship Project</h3>
                     <img src="assets/images/Hatch.jpg" id="HatchImg">
                 </div>
 
-                <div class="work-box">
+                <div class="work-box" id="internSite">
                     <h3>Fall 2022 Internship Project</h3>
                     <img src="assets/images/internWebsite.jpg" id="internImg">
                 </div>
 
-                <div class="work-box">
+                <div class="work-box" id="riskyBusiness">
                     <h3>Winter 2023 Internship Project</h3>
                     <img src="assets/images/game.jpg" id="gameImg">
+                </div>
+            </div>
+
+
+            <!-- Overlay content -->
+            <div class="overlay" id="bakery-overlay">
+                <div class="overlay-content">
+                    <span class="close-button">&times;</span>
+                    <h3>The Bakery Website</h3>
+                    <p>This Bakery website was created as a group project for a database systems course atOakland
+                        University.
+                        My group and I created a customer facing website for users to order items froma bakery for later
+                        pick up.
+                        This projectalso included an employee facing aspect where employees of the bakery could login
+                        and see the queue of orders.
+                        <br>
+                        We utilized an SQL database to store all information on items available by the bakery, orders,
+                        and customer information.
+                        <br>
+                        The README.md contains detailed information on this bakery website.
+                        <br>
+                        <strong>Github Link:</strong> <a href="https://github.com/adridos/CustomerBakery">Bakery</a>
+
+                    </p>
+                    <img src="assets/images/bakeryItems.png" alt="Bakery Project Items">
+                </div>
+            </div>
+            <div class="overlay" id="grizzblocks-overlay">
+                <div class="overlay-content">
+                    <span class="close-button">&times;</span>
+                    <h3>GrizzBlocks</h3>
+                    <p>Grizz blocks,an Oakland University twist on Tetris, was a group project done Fall 2021 as a
+                        projectfor my Sophomore Project course.
+                        This project emhasized working as a team of developers where I was appointed the project
+                        manager. We learned to use Unity inorder to create this game and used c# to write the functions
+                        of the game.
+                        We utilized trello as a task managment system and completed this game in the span of 3 months.
+                        Details on functions and game play can be found in the GrizzBlocks Manual below
+                    </p>
+                    <br>
+                    <br>
+                    <strong>Github Link:</strong> <a href="https://github.com/adridos/GrizzBlocks">GrizzBlocks</a>
+                    <br>
+                    <br>
+                    <strong>Link to Game Manual:</strong> <a
+                        href="https://docs.google.com/document/d/13wJ4pW8mJ7w11l3axZPJNhZpeKfhKNbibIarHU5U9Qo/edit?usp=sharing">GrizzBlocks
+                        Manual</a>
+                    <br>
+                    <br>
+                    <img src="assets/images/grizzBlocksStart.png" alt="Project 1">
+                </div>
+            </div>
+            <div class="overlay" id="ford-overlay">
+                <div class="overlay-content">
+                    <span class="close-button">&times;</span>
+                    <h3>Summer 2022 Ford Motor Company Internship Project </h3>
+                    <p>As a summer 2022 Product Development intern with Ford Motor company, I was assigned a projectof
+                        developing an internal website meant to hold information on the Digital Account team.
+                        I worked closely with the UI/UX Designer who designed the website using Figma while I developed
+                        the front end code of the website. The website was then hosted using Github pages.
+                        The project was overseen by the Product Manager and my direct report for the summer.
+                        All code was done using HTML, CSS, and Javascript.</p>
+                </div>
+            </div>
+            <div class="overlay" id="hatch-overlay">
+                <div class="overlay-content">
+                    <span class="close-button">&times;</span>
+                    <h3>The Auto Club Group - Hatch Garage Website</h3>
+                    <p>During the Fall of 2022, I interned with The Auto Club Group's Innovation team, also reffered to
+                        as the Hatch Garage. I was assigned to design and develop an external facing website to showcase
+                        what
+                        the Hatch Garage team has created, the history, and other information about the team.
+                        This project was completed using HTML, CSS, and Javascript and was then hosted using AWS</p>
+
+                </div>
+            </div>
+            <div class="overlay" id="internSite-overlay">
+                <div class="overlay-content">
+                    <span class="close-button">&times;</span>
+                    <h3>Intern Website Overlay</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <img src="path/to/image.jpg" alt="Project 1">
+                </div>
+            </div>
+            <div class="overlay" id="riskyBusiness-overlay">
+                <div class="overlay-content">
+                    <span class="close-button">&times;</span>
+                    <h3> Risky Business Game Overlay</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <img src="path/to/image.jpg" alt="Project 1">
                 </div>
             </div>
         </section>
@@ -147,5 +237,6 @@
         </section>
     </main>
 </body>
+<script src="projectOverlay.js"></script>
 
 </html>
