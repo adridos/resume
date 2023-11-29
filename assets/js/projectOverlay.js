@@ -10,7 +10,7 @@ workBoxes.forEach(workBox => {
 const closeButtons = document.querySelectorAll('.close-button');
 closeButtons.forEach(closeButton => {
   closeButton.addEventListener('click', () => {
-    const overlay = document.querySelector(`.overlay`);
+    const overlay = closeButton.closest('.overlay');
     overlay.style.display = 'none';
   });
 });
