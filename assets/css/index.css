@@ -5,25 +5,44 @@
   --secondaryLight: #f84d67;
   --cream: #f7ecdc;
   --electricPurple: #5b44e5;
+  --electricYellow: #EDF332;
+}
+
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--white);
+}
+body{
+  background-image: url('assets/images/bg.jpg');
+  background-size: cover;
 }
 
 section {
-  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+#welcomePage{
+  background-color: var(--electricPurple);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#welcome{
+  color: var(--electricYellow);
+  font-size: 250px;
+}
+
 h2 {
   display: flex;
   justify-content: center;
-  background-color: var(--white);
-  color: var(--primaryDark);
+  color: var(--electricPurple);
+  margin-bottom: 0;
 }
 header {
-  background-color: var(
-    --primaryDark
-  ); /* Set the background color of the header */
+  background-color: var(--electricPurple);
   display: flex;
   justify-content: flex-end;
 }
@@ -43,17 +62,18 @@ nav li {
 }
 
 nav a {
-  color: var(--white); /* Set the text color to white */
+  color: var(--electricYellow); /* Set the text color to white */
   text-decoration: none; /* Remove the underline from the link */
   padding: 0.5rem; /* Add padding around the link */
   transition: all 0.3s ease-in-out; /* Add a smooth transition effect */
+  font-size: 20px;
+  font-weight: 700;
 }
 
 nav a:hover {
-  background-color: var(
-    --secondaryLight
-  ); /* Change the background color on hover */
-  color: var(--black); /* Change the text color on hover */
+  background-color: var(--electricYellow);
+  color: var(--electricPurple)
+  /*color: var(--black); /* Change the text color on hover */
 }
 
 main {
@@ -78,13 +98,13 @@ main {
   object-fit: cover; /* Resize the image to cover the entire container */
 }
 .divider {
-  border-top: 2px solid var(--primaryDark);
+  border-top: 2px solid var(--electricYellow);
   margin: 20px 0;
   width: 100%;
 }
 
 h3 {
-  color: var(--primaryDark);
+  color: var(--electricPurple);
   text-decoration: solid;
   text-align: center;
 }
@@ -129,14 +149,14 @@ a {
 }
 
 .link {
-  border: 2px solid var(--secondaryLight);
-  background-color: var(--secondaryLight);
+  border: 2px solid var(--electricYellow);
+  background-color: var(--electricYellow);
   padding: 2px 5px;
 }
 
 .contactLink {
-  border: 2px solid var(--secondaryLight);
-  background-color: var(--secondaryLight);
+  border: 2px solid var(--electricYellow);
+  background-color: var(--electricYellow);
   padding: 2px 5px;
   border-radius: 10px;
 }
@@ -155,20 +175,21 @@ a {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: var(--primaryDark);
+  background-color: var(--electricPurple);
   color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
 }
 #myBtn:hover {
-  background-color: var(--secondaryLight);
+  background-color: var(--electricYellow);
 }
 
 #projects {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
 }
 a {
   text-decoration: none;
@@ -226,7 +247,7 @@ img {
 }
 
 .overlay-content {
-  border: 1px solid black;
+  border: 1px solid var(--black);
   /* existing styles */
   position: absolute;
   top: 50%;
@@ -235,6 +256,7 @@ img {
   background-color: #fff;
   padding: 20px;
   text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .close-button {
