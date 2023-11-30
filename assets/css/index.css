@@ -5,26 +5,56 @@
   --secondaryLight: #f84d67;
   --cream: #f7ecdc;
   --electricPurple: #5b44e5;
+  --electricYellow: #edf332;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--electricPurple);
+}
+
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+  background-color: var(--white);
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 section {
-  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+h1 {
+  color: var(--electricYellow);
+  font-size: 200px;
+  margin: 0;
 }
 
 h2 {
   display: flex;
   justify-content: center;
-  background-color: var(--white);
-  color: var(--primaryDark);
+  color: var(--electricPurple);
+  margin-bottom: 0;
+}
+h3 {
+  color: var(--electricPurple);
+  text-decoration: solid;
+  text-align: center;
 }
 header {
-  background-color: var(
-    --primaryDark
-  ); /* Set the background color of the header */
-  display: flex;
+  background-color: var(--electricPurple);
   justify-content: flex-end;
 }
 
@@ -43,26 +73,91 @@ nav li {
 }
 
 nav a {
-  color: var(--white); /* Set the text color to white */
+  color: var(--electricYellow); /* Set the text color to white */
   text-decoration: none; /* Remove the underline from the link */
   padding: 0.5rem; /* Add padding around the link */
   transition: all 0.3s ease-in-out; /* Add a smooth transition effect */
+  font-size: 20px;
+  font-weight: 700;
 }
 
 nav a:hover {
-  background-color: var(
-    --secondaryLight
-  ); /* Change the background color on hover */
-  color: var(--black); /* Change the text color on hover */
+  background-color: var(--electricYellow);
+  color: var(--electricPurple);
+  /*color: var(--black); /* Change the text color on hover */
+}
+a {
+  text-decoration: none;
+  color: var(--black);
 }
 
-main {
+img {
+  height: 200px;
+  width: auto;
+}
+strong {
+  background-color: var(--electricPurple);
+  color: var(--electricYellow);
+  padding: 5px;
+}
+
+#hatchImg {
+  width: 280px;
+}
+
+#internImg {
+  width: 320px;
+}
+
+#gameImg {
+  width: 300px;
+}
+
+#welcomePage {
+  background-color: var(--electricPurple);
+  height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items: flex-start;
+}
+#introduction {
+  margin: 10px 350px 0 350px;
+  line-height: 25px;
 }
 
+#resumeBtn {
+  display: flex;
+  justify-content: center;
+  margin: 0 500px 0 500px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 10px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--electricPurple);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: var(--electricYellow);
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
 .profile-image {
   border-radius: 50%; /* Make the image circular */
   overflow: hidden; /* Hide any overflowing content */
@@ -78,29 +173,11 @@ main {
   object-fit: cover; /* Resize the image to cover the entire container */
 }
 .divider {
-  border-top: 2px solid var(--primaryDark);
+  border-top: 2px solid var(--electricYellow);
   margin: 20px 0;
   width: 100%;
 }
 
-h3 {
-  color: var(--primaryDark);
-  text-decoration: solid;
-  text-align: center;
-}
-
-#resumeBtn {
-  display: flex;
-  justify-content: center;
-  margin: 0 500px 0 500px;
-  padding: 10px 5px 10px 5px;
-  border-radius: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: var(--black);
-}
 .container {
   display: flex;
   justify-content: space-between;
@@ -129,14 +206,14 @@ a {
 }
 
 .link {
-  border: 2px solid var(--secondaryLight);
-  background-color: var(--secondaryLight);
+  border: 2px solid var(--electricYellow);
+  background-color: var(--electricYellow);
   padding: 2px 5px;
 }
 
 .contactLink {
-  border: 2px solid var(--secondaryLight);
-  background-color: var(--secondaryLight);
+  border: 2px solid var(--electricYellow);
+  background-color: var(--electricYellow);
   padding: 2px 5px;
   border-radius: 10px;
 }
@@ -145,39 +222,6 @@ a {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* scroll to top button */
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: var(--primaryDark);
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-#myBtn:hover {
-  background-color: var(--secondaryLight);
-}
-
-#projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-img {
-  height: 200px;
-  width: auto;
-}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -187,7 +231,7 @@ img {
 
 .work-box {
   border-radius: 5px;
-  padding: 20px;
+  padding: 30px;
   width: auto;
   text-align: center;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -201,19 +245,6 @@ img {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-#hatchImg {
-  width: 280px;
-}
-
-#internImg {
-  width: 320px;
-}
-
-#gameImg {
-  width: 300px;
-}
-
-/* Overlay styles */
 .overlay {
   position: fixed;
   z-index: 999;
@@ -226,7 +257,7 @@ img {
 }
 
 .overlay-content {
-  border: 1px solid black;
+  border: 1px solid var(--electricPurple);
   /* existing styles */
   position: absolute;
   top: 50%;
@@ -235,6 +266,7 @@ img {
   background-color: #fff;
   padding: 20px;
   text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .close-button {
@@ -244,4 +276,20 @@ img {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.drop-element {
+  position: relative;
+  animation: dropAnimation 3s ease forwards;
+}
+
+@keyframes dropAnimation {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(100);
+    opacity: 1;
+  }
 }

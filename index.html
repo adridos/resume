@@ -1,194 +1,267 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Adriana's Resume</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+  </head>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
+  <body>
+    <section id="welcomePage">
+      <h1 id="welcome">HELLO WORLD,<br /></h1>
+      <h1 class="drop-element">I'M ADRIANA</h1>
+    </section>
+    <header id="header">
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
+    <section id="theRest">
+      <main>
         <div class="profile-image">
-            <img src="assets/images/adri.jpeg" alt="a photo of myself">
+          <img src="assets/images/adri.jpeg" alt="a photo of myself" />
         </div>
-        <h1>Adriana Dostine</h1>
+        <h2>Adriana Dostine</h2>
+        <p id="introduction">
+          Hey there! 👋 I'm Adriana, welcome to my digital portfolio. I'm a
+          passionate <strong>innovator</strong> with a knack for turning ideas
+          into reality. My <strong>creative</strong> spirit fuels my drive to
+          deliver top-notch results in everything I do. Beyond the skills on
+          paper, what sets me apart is my knack for
+          <strong>connecting</strong> with people. Whether it's brainstorming
+          sessions or morning meetings, my people skills shine through. I have
+          enjoyed exploring the world through computer science. My joy and
+          talent really come together through <br />
+          <strong>full stack</strong> and
+          <strong>front end development</strong>. I am eager to learn and eager
+          to contribute. So now, I invite you to enjoy my work and I look
+          forward to working with ya!
+        </p>
         <div>
-            <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+          <button onclick="topFunction()" id="myBtn" title="Go to top">
+            ↑
+          </button>
         </div>
 
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="divider"></div>
+          <h2>Projects</h2>
+          <div class="divider"></div>
 
-            <div class="container">
-                <div class="work-box" id="bakery">
-                    <h3>Bakery Website</h3>
-                    <img src="assets/images/bakery.png">
-                </div>
-
-                <div class="work-box" id="grizzblocks">
-                    <h3>GrizzBlocks</h3>
-                    <img src="assets/images/grizzblocks.jpg">
-                </div>
-
-                <div class="work-box" id="ford">
-                    <h3>Summer 2022 Internship Project</h3>
-                    <img src="assets/images/DA.jpg">
-                </div>
-                <div class="work-box" id="hatch">
-                    <h3>Fall 2022 Internship Project</h3>
-                    <img src="assets/images/Hatch.jpg" id="HatchImg">
-                </div>
-
-                <div class="work-box" id="internSite">
-                    <h3>Fall 2022 Internship Project</h3>
-                    <img src="assets/images/internWebsite.jpg" id="internImg">
-                </div>
-
-                <div class="work-box" id="riskyBusiness">
-                    <h3>Winter 2023 Internship Project</h3>
-                    <img src="assets/images/riskyBusiness.png" id="gameImg">
-                </div>
+          <div class="container">
+            <div class="work-box" id="bakery">
+              <h3>Bakery Website</h3>
+              <img src="assets/images/bakery.png" />
             </div>
 
+            <div class="work-box" id="grizzblocks">
+              <h3>GrizzBlocks</h3>
+              <img src="assets/images/grizzblocks.jpg" />
+            </div>
 
-            <!-- Overlay content -->
-            <div class="overlay" id="bakery-overlay">
-                <div class="overlay-content">
-                    <span class="close-button">&times;</span>
-                    <h3>The Bakery Website</h3>
-                    <p>This Bakery website was created as a group project for a database systems course at Oakland
-                        University.
-                        My group and I created a customer facing website for users to order items from a bakery for later
-                        pick up.
-                        This project also included an employee facing aspect where employees of the bakery could login
-                        and see the queue of orders.
-                        <br>
-                        We utilized an SQL database to store all information on items available by the bakery, orders,
-                        and customer information.
-                        <br>
-                        The README.md contains detailed information on this bakery website.
-                        <br>
-                        <br>
-                        <strong>Github Link:</strong> <a href="https://github.com/adridos/CustomerBakery" class="link">Bakery</a>
+            <div class="work-box" id="ford">
+              <h3>Summer 2022 Internship Project</h3>
+              <img src="assets/images/DA.jpg" />
+            </div>
+            <div class="work-box" id="hatch">
+              <h3>Fall 2022 Internship Project</h3>
+              <img src="assets/images/Hatch.jpg" id="HatchImg" />
+            </div>
 
-                    </p>
-                    <img src="assets/images/bakeryItems.png" alt="Bakery Project Items">
-                </div>
+            <div class="work-box" id="internSite">
+              <h3>Fall 2022 Internship Project</h3>
+              <img src="assets/images/internWebsite.jpg" id="internImg" />
             </div>
-            <div class="overlay" id="grizzblocks-overlay">
-                <div class="overlay-content">
-                    <span class="close-button">&times;</span>
-                    <h3>GrizzBlocks</h3>
-                    <p>Grizz blocks,an Oakland University twist on Tetris, was a group project done Fall 2021 as a
-                        project for my Sophomore Project course.
-                        This project emhasized working as a team of developers where I was appointed the project
-                        manager. We learned to use Unity inorder to create this game and used c# to write the functions
-                        of the game.
-                        We utilized trello as a task managment system and completed this game in the span of 3 months.
-                        Details on functions and game play can be found in the GrizzBlocks Manual below
-                    </p>
-                    <br>
-                    <br>
-                    <strong>Github Link:</strong> <a href="https://github.com/adridos/GrizzBlocks" class="link">GrizzBlocks</a>
-                    <br>
-                    <br>
-                    <strong>Link to Game Manual:</strong> <a
-                        href="https://docs.google.com/document/d/13wJ4pW8mJ7w11l3axZPJNhZpeKfhKNbibIarHU5U9Qo/edit?usp=sharing" class="link">GrizzBlocks
-                        Manual</a>
-                    <br>
-                    <br>
-                    <img src="assets/images/grizzBlocksStart.png" alt="Project 1">
-                </div>
-            </div>
-            <div class="overlay" id="ford-overlay">
-                <div class="overlay-content">
-                    <span class="close-button">&times;</span>
-                    <h3>Summer 2022 Ford Motor Company Internship Project </h3>
-                    <p>As a summer 2022 Product Development intern with Ford Motor company, I was assigned a project of
-                        developing an internal website meant to hold information on the Digital Account team.
-                        I worked closely with the UI/UX Designer who designed the website using Figma while I developed
-                        the front end code of the website. The website was then hosted using Github pages.
-                        The project was overseen by the Product Manager and my direct report for the summer.
-                        All code was done using HTML, CSS, and Javascript.</p>
-                </div>
-            </div>
-            <div class="overlay" id="hatch-overlay">
-                <div class="overlay-content">
-                    <span class="close-button">&times;</span>
-                    <h3>The Auto Club Group - Hatch Garage Website</h3>
-                    <p>During the Fall of 2022, I interned with The Auto Club Group's Innovation team, also reffered to
-                        as the Hatch Garage. I was assigned to design and develop an external facing website to showcase
-                        what
-                        the Hatch Garage team has created, the history, and other information about the team.
-                        This project was completed using HTML, CSS, and Javascript and was then hosted using AWS</p>
 
-                </div>
+            <div class="work-box" id="riskyBusiness">
+              <h3>Winter 2023 Internship Project</h3>
+              <img src="assets/images/riskyBusiness.png" id="gameImg" />
             </div>
-            <div class="overlay" id="internSite-overlay">
-                <div class="overlay-content">
-                    <span class="close-button">&times;</span>
-                    <h3>Internship Program Website</h3>
-                    <p>After completing the Hatch Garage website, my next project at The Auto Club Group was to create a website that showcased the internship program. 
-                        This website included an FAQ and testimonials from previous interns. 
-                    </p>
-                </div>
+          </div>
+
+          <!-- Overlay content -->
+          <div class="overlay" id="bakery-overlay">
+            <div class="overlay-content">
+              <span class="close-button">&times;</span>
+              <h3>The Bakery Website</h3>
+              <p>
+                This bakery website emerged from a collaborative effort during a
+                database systems course at Oakland University. Our team embarked
+                on the creation of a user-friendly platform, enabling customers
+                to effortlessly place orders for delectable bakery items
+                scheduled for later pickup. Going beyond the customer interface,
+                we incorporated an employee-centric section where bakery staff
+                could log in and seamlessly manage the order queue.
+                <br />
+                The backbone of our system is an SQL database meticulously
+                designed to store comprehensive information on the bakery's
+                product inventory, orders in progress, and customer details. For
+                an in-depth understanding of the intricacies involved, the
+                README.md file provides a comprehensive guide to navigating
+                through the functionalities and features of this bakery website.
+                <br />
+                <br />
+                <em>Github Link:</em>
+                <a
+                  href="https://github.com/adridos/CustomerBakery"
+                  target="_blank"
+                  class="link"
+                  >Bakery</a
+                >
+              </p>
+              <img
+                src="assets/images/bakeryItems.png"
+                alt="Bakery Project Items"
+              />
             </div>
-            <div class="overlay" id="riskyBusiness-overlay">
-                <div class="overlay-content">
-                    <span class="close-button">&times;</span>
-                    <h3> Risky Business Game </h3>
-                    <p>Icontinued my internship with The Auto Club group into the Winter 2023 semester. I worked with a team of two other interns. We came up with the game logic, 
-                        mathematical functions and styling to develop a game meant to teach insurance agents about combined ratio.</p>
-                </div>
+          </div>
+          <div class="overlay" id="grizzblocks-overlay">
+            <div class="overlay-content">
+              <span class="close-button">&times;</span>
+              <h3>GrizzBlocks</h3>
+              <p>
+                Grizz blocks,an Oakland University twist on Tetris, was a group
+                project done Fall 2021 as a project for my Sophomore Project
+                course. This project emhasized working as a team of developers
+                where I was appointed the project manager. We learned to use
+                Unity inorder to create this game and used c# to write the
+                functions of the game. We utilized trello as a task managment
+                system and completed this game in the span of 3 months. Details
+                on functions and game play can be found in the GrizzBlocks
+                Manual below
+              </p>
+              <br />
+              <br />
+              <em>Github Link:</em>
+              <a
+                href="https://github.com/adridos/GrizzBlocks"
+                target="_blank"
+                class="link"
+                >GrizzBlocks</a
+              >
+              <br />
+              <br />
+              <em>Link to Game Manual:</em>
+              <a
+                href="https://docs.google.com/document/d/13wJ4pW8mJ7w11l3axZPJNhZpeKfhKNbibIarHU5U9Qo/edit?usp=sharing"
+                target="_blank"
+                class="link"
+                >GrizzBlocks Manual</a
+              >
+              <br />
+              <br />
+              <img src="assets/images/grizzBlocksStart.png" alt="Project 1" />
             </div>
+          </div>
+          <div class="overlay" id="ford-overlay">
+            <div class="overlay-content">
+              <span class="close-button">&times;</span>
+              <h3>Summer 2022 Ford Motor Company Internship Project</h3>
+              <p>
+                As a summer 2022 Product Development intern with Ford Motor
+                company, I was assigned a project of developing an internal
+                website meant to hold information on the Digital Account team. I
+                worked closely with the UI/UX Designer who designed the website
+                using Figma while I developed the front end code of the website.
+                The website was then hosted using Github pages. The project was
+                overseen by the Product Manager and my direct report for the
+                summer. All code was done using HTML, CSS, and Javascript.
+              </p>
+            </div>
+          </div>
+          <div class="overlay" id="hatch-overlay">
+            <div class="overlay-content">
+              <span class="close-button">&times;</span>
+              <h3>The Auto Club Group - Hatch Garage Website</h3>
+              <p>
+                During the Fall of 2022, I interned with The Auto Club Group's
+                Innovation team, also reffered to as the Hatch Garage. I was
+                assigned to design and develop an external facing website to
+                showcase what the Hatch Garage team has created, the history,
+                and other information about the team. This project was completed
+                using HTML, CSS, and Javascript and was then hosted using AWS
+              </p>
+            </div>
+          </div>
+          <div class="overlay" id="internSite-overlay">
+            <div class="overlay-content">
+              <span class="close-button">&times;</span>
+              <h3>Internship Program Website</h3>
+              <p>
+                After completing the Hatch Garage website, my next project at
+                The Auto Club Group was to create a website that showcased the
+                internship program. This website included an FAQ and
+                testimonials from previous interns.
+              </p>
+            </div>
+          </div>
+          <div class="overlay" id="riskyBusiness-overlay">
+            <div class="overlay-content">
+              <span class="close-button">&times;</span>
+              <h3>Risky Business Game</h3>
+              <p>
+                I continued my internship with The Auto Club group into the
+                Winter 2023 semester. I worked with a team of two other interns.
+                We came up with the game logic, mathematical functions and
+                styling to develop a game meant to teach insurance agents about
+                combined ratio.
+              </p>
+            </div>
+          </div>
         </section>
         <section id="resume">
-            <h2>Resume</h2>
-            <div class="divider"></div>
-            <a href="assets/AdrianaDostineResume.pdf" target="_blank" class="link" id="resumeBtn">PDF Resume</a>
- 
-
+          <h2>Resume</h2>
+          <div class="divider"></div>
+          <a
+            href="assets/AdrianaDostineResume.pdf"
+            target="_blank"
+            class="link"
+            id="resumeBtn"
+            >PDF Resume</a
+          >
         </section>
         <section id="contact">
-            <h2>Contact Me</h2>
-            <div class="divider"></div>
+          <h2>Contact Me</h2>
+          <div class="divider"></div>
 
-            <div class="container">
-                <div class="contact-box">
-                    <img class="icon" src="assets/images/email.jpg">
-                    <h3>Send me an Email</h3>
-                    <p>adriana.dostine@hotmail.com</p>
-                </div>
-
-                <div class="contact-box">
-                    <img class="icon" src="assets/images/linkedin.jpg">
-                    <h3>Connect on LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/adriana-massey/" class="contactLink">LinkedIn</a>
-                </div>
-
-                <div class="contact-box">
-                    <img class="icon" src="assets/images/github.png">
-                    <h3>Checkout my Github</h3>
-                    <a href="https://github.com/adridos" class="contactLink">GitHub</a>
-                </div>
+          <div class="container">
+            <div class="contact-box">
+              <img class="icon" src="assets/images/email.jpg" />
+              <h3>Send me an Email</h3>
+              <p>adriana.dostine@hotmail.com</p>
             </div>
 
-        </section>
-    </main>
-</body>
-<script src="assets/js/projectOverlay.js"></script>
-<script src="assets/js/topScroll.js"></script>
+            <div class="contact-box">
+              <img class="icon" src="assets/images/linkedin.jpg" />
+              <h3>Connect on LinkedIn</h3>
+              <a
+                href="https://www.linkedin.com/in/adriana-dostine/"
+                target="_blank"
+                class="contactLink"
+                >LinkedIn</a
+              >
+            </div>
 
+            <div class="contact-box">
+              <img class="icon" src="assets/images/github.png" />
+              <h3>Checkout my Github</h3>
+              <a
+                href="https://github.com/adridos"
+                target="_blank"
+                class="contactLink"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+  </body>
+  <script src="assets/js/projectOverlay.js"></script>
+  <script src="assets/js/topScroll.js"></script>
+  <script src="assets/js/autoscroll.js"></script>
 </html>
