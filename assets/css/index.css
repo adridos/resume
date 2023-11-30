@@ -55,7 +55,6 @@ h3 {
 }
 header {
   background-color: var(--electricPurple);
-  display: flex;
   justify-content: flex-end;
 }
 
@@ -96,7 +95,7 @@ img {
   height: 200px;
   width: auto;
 }
-strong{
+strong {
   background-color: var(--electricPurple);
   color: var(--electricYellow);
   padding: 5px;
@@ -222,8 +221,6 @@ strong{
   transform: translateY(-5px);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
-
-/* scroll to top button */
 
 .container {
   display: flex;
