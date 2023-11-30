@@ -1,0 +1,7 @@
+# _config.yml
+title: Adriana Dostine's Portfolio
+description: This website will showcase my work and about me for potential employers
+
+sass:
+  sass_dir: assets/css/index.css
+  style: :compressed # or :expanded if you prefer
